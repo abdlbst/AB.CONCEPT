@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 30px;
+}
+
+
+body{
+    background-image: url('BAHAN/BACKGROUND.JPG'); 
+    background-size: cover; background-position: center; background-attachment: fixed;
+    margin-top: 200px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+h2{
+    color:white;
+    font-size: 30px;
+}
+p{
+    font-size:20px;
+    color:white;
+    
+}
+/* Button */
+button {
+    background-color: hsl(12, 100%, 50%);
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Orbitron';
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+
+/* Terapkan ke semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}

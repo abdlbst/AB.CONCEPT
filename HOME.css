@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 30px;
+}
+
+
+body{
+    background-image: url('BAHAN/BACKGROUND.JPG'); 
+    background-size: cover; background-position: center; background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+h2{
+    color:white;
+    font-size: 100px;
+}
+p{
+    font-size:20px;
+    color:white;
+    
+}
+/* Button */
+button {
+    background-color: hsl(12, 100%, 50%);
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Orbitron';
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+
+/* Terapkan ke semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+/* Navigation */
+nav {
+    color: white;
+    text-align: center;
+}
+
+.navigasi:link {
+    color: white;
+    padding: 14px 20px;
+}
+/* ======================= */
+/* RESPONSIVE MOBILE */
+/* ======================= */
+
+@media (max-width:768px){
+
+.next{
+font-size:28px;
+}
+
+.sosmed{
+font-size:16px;
+gap:15px;
+}
+
+}
+
+
+/* ======================= */
+/* RESPONSIVE HP KECIL */
+/* ======================= */
+
+@media (max-width:480px){
+
+.next{
+font-size:24px;
+}
+
+.sosmed{
+flex-direction:column;
+gap:10px;
+}
+
+}

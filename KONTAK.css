@@ -1,0 +1,125 @@
+/* Font */
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+
+/* Reset + font global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Body */
+body {
+    background-image: url('BAHAN/BACKGROUND.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Background */
+
+header{
+    margin-top: 30px;
+
+}
+
+/* Text */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+
+/* Navigation */
+nav {
+    text-align: center;
+    font-size: 15px;
+}
+
+.navigasi {
+    color: white;
+    padding: 1px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.navigasi:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* opsional, hilangkan garis bawah */
+}
+
+a:hover {
+    color: hsl(0, 0%, 100%); /* efek saat disentuh */
+}
+
+   /*navigation bar */
+
+    /* LINK */
+    .navbar a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 3px;
+        transition: 0.3s;
+    }
+
+    /* GARIS BAWAH ANIMASI */
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background: white;
+        transition: 0.3s;
+    }
+
+    /* HOVER */
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+    /* ACTIVE */
+    .navbar a.active::after {
+        width: 100%;
+    }
+
+    .navbar a.active {
+        color: #ff3300;
+    }
+
+    /* NAVBAR CONTAINER */
+    .navbar-contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+   background: #ff3300;
+    backdrop-filter: blur(10px); /* efek glass */
+    border-radius: 50px;
+    width: fit-content;
+    margin:  auto;
+}

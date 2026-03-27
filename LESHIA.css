@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin-top: 30px;
+}
+
+
+body{
+    background-image: url('BAHAN/BACKGROUND.JPG'); 
+    background-size: cover; background-position: center; background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+h2{
+    color:white;
+    font-size: 100px;
+}
+p{
+    font-size:20px;
+    color:white;
+    
+}
+/* Button */
+button {
+    background-color: #ff3300;
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-family: 'Orbitron';
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('FONT/Orbitron-Bold.ttf') format('truetype');
+}
+
+/* Terapkan ke semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+/* Navigation */
+nav {
+    color: white;
+    text-align: center;
+}
+
+.navigasi:link {
+    color: white;
+    padding: 14px 20px;
+}
+
+
+/* pilihan design*/
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.slider img {
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.slider img:hover {
+    transform: scale(1.1);
+}
+
+/* Hilangkan scrollbar */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* BUTTON */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background: black;
+}
+
+/*navigation bar */
+
+/* LINK */
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+/* GARIS BAWAH ANIMASI */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: #ff3300;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* ACTIVE */
+.navbar a.active::after {
+    width: 100%;
+}
+
+.navbar a.active {
+    color: #ff3300;
+}
+
+/* Slider center */
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
